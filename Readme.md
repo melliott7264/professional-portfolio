@@ -12,6 +12,8 @@ This is a professional portfolio for Mark Elliott to showcase his web developmen
 
 Mark Elliott  https://github.com/melliott7264
 
+Link to project: https://melliott7264.github.io/professional-portfolio/
+
 
 ## License
 
