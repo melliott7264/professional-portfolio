@@ -1,0 +1,12 @@
+:root {
+    --default-fontcolor: black;
+    --default-bgcolor: white;
+    --primary-bgcolor: #6363d0;
+    --primary-fontcolor: #ffffff;
+    --primary-title-bgcolor: aliceblue;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
