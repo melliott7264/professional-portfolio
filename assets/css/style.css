@@ -4,7 +4,8 @@
     --default-bgcolor: white;
     --primary-bgcolor: #6363d0;
     --primary-fontcolor: #ffffff;
-    --primary-title-bgcolor: aliceblue;
+    --primary-title-bgcolor: #cee7fc;
+    --work-bgcolor: #fff8d5;
 }
 
 /* Reset global defaults */
@@ -17,14 +18,17 @@
 
 /* Global style */
 h1 {
+    font-size: 2.5rem;
     padding: 0 10px;
 }
 
 h2 {
+    font-size: 2rem;
     padding: 5px 10px;
 }
 
 h3 {
+    font-size: 1.5rem;
     padding: 10px;
 
 }
@@ -100,6 +104,9 @@ footer p {
 }
 
 /* Style Work Section */
+#work {
+    background-color: var(--work-bgcolor);
+}
 .apps {
     display: flex;
     justify-content: center;
@@ -116,14 +123,14 @@ footer p {
 
 .first-app img {
     width: 380px;
-    padding: 10px;
-}
+    padding: 20px 10px;
+   }
 
 /* Overlaying title over image */
 .first-title {
     position:absolute;
     right: 0;
-    bottom: 0;
+    bottom: 20px;
     width: 40%;
     padding: 15px;
     margin: 0 10px;
@@ -132,13 +139,13 @@ footer p {
 
 .add-app img {
     width: 300px;
-    padding: 10px;
+    padding: 20px 10px;
 }
 
 .add-title {
     position:absolute;
     left: 0;
-    bottom: 0;
+    bottom: 20px;
     width: 70%;
     padding: 10px 15px;
     margin-left: 10px;
