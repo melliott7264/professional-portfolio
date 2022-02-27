@@ -29,7 +29,7 @@ nav {
     align-items: center;
 }
 
-nav a {
+nav a, .contact-info a {
     padding: 5px 10px;
 }
 
@@ -37,7 +37,7 @@ h2 {
     padding: 5px 10px;
 }
 
-#about h3 {
+h3 {
     padding: 10px;
 
 }
@@ -53,14 +53,15 @@ h2 {
 
 .apps {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
-.first-app {
+.first-app, .add-app {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    /* Need to set parent position to relative in order to allow child (.first-title)  to be set to absolute for overlay */
     position: relative;
 }
 
@@ -69,19 +70,43 @@ h2 {
     padding: 10px;
 }
 
+/* Overlaying title over image */
 .first-title {
     position:absolute;
     right: 0;
-    bottom: 20px;
+    bottom: 0;
     width: 40%;
     padding: 15px;
     margin: 0 10px;
     background-color: var(--primary-title-bgcolor);
 }
 
-
-
 .add-app img {
     width: 300px;
     padding: 10px;
+}
+
+.add-title {
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    width: 70%;
+    padding: 10px 15px;
+    margin-left: 10px;
+    background-color: var(--primary-title-bgcolor);
+}
+
+.contact, .contact-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-info {
+    justify-content: flex-start;
+    align-items: center;
+}
+    
+footer p {
+    text-align: center;
+    margin: 5px 0;
 }
