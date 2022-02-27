@@ -17,6 +17,10 @@
 }
 
 /* Global style */
+
+html {
+    scroll-behavior: smooth;
+}
 h1 {
     font-size: 2.5rem;
     padding: 0 10px;
@@ -66,7 +70,6 @@ nav, .contact-info {
     flex-wrap: wrap;
     align-items: center;
 }
-
 
 nav a, .contact-info a {
     padding: 5px 10px;
@@ -123,7 +126,7 @@ footer p {
 
 .first-app img {
     width: 380px;
-    padding: 20px 10px;
+    padding: 0 10px 20px 10px;
    }
 
 /* Overlaying title over image */
@@ -152,6 +155,117 @@ footer p {
     background-color: var(--primary-title-bgcolor);
 }
 
+.footnote {
+    text-align: center;
+    padding: 10px;
+}
 
+/* Styling for screens 475px to 649px */
 
+@media screen and (min-width: 475px) {
+    .hero {
+        justify-content: center;
+        height: 100px;
+    }
 
+    .bio {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .first-app img {
+        width: 450px;
+    }
+    
+    .add-app img {
+        width: 350px;
+     }
+    
+}
+
+/* Styling for screens 650px to 799px */
+@media screen and (min-width: 650px) {
+    .hero {
+        height: 150px;
+        justify-content: center;
+    }
+
+    .bio {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .first-app img {
+        width: 600px;
+    }
+    
+    .add-app img {
+        width: 300px;
+     }
+     
+}
+
+/* Styling for screens 800px to 949px */
+@media screen and (min-width: 800px) {
+    body {
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    .hero {
+        height: 200px;
+        justify-content: center;
+    }
+
+    .bio {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .first-app img {
+        width: 780px;
+    }
+    
+    .add-app img {
+        width: 390px;
+     }
+     
+}
+
+/* Styling for screens over 950px */
+@media screen and (min-width: 950px) {
+    body {
+        width: 1000px;
+        margin: 0 auto;
+    }
+    .hero {
+        height: 200px;
+        justify-content: center;
+    }
+
+    .bio {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .first-app img {
+        width: 900px;
+    }
+    
+    .add-app img {
+        width: 450px;
+     }
+     
+}
