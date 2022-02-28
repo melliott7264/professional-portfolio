@@ -147,7 +147,7 @@ footer p {
 
 .first-app img {
     width: 380px;
-    padding: 0 10px 20px 10px;
+    padding: 20px 10px 20px 10px;
    }
 
 /* Overlaying title over image */
@@ -214,7 +214,7 @@ table {
     .first-app img {
         width: 450px;
     }
-    
+
     .add-app img {
         width: 350px;
      }
@@ -303,7 +303,7 @@ table {
     }
 
     #work h3 {
-        height: 720px;
+        height: 740px;
         padding: 10px 10px 10px 30px;
     }
 
@@ -352,7 +352,7 @@ table {
     }
 
     #work h3 {
-        height: 938px; 
+        height: 958px; 
     }
     .first-app img {
         width: 800px;
