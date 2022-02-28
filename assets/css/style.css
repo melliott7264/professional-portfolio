@@ -90,6 +90,13 @@ nav a:hover, .contact-info a:hover {
     border-radius: 5px;
 }
 
+/* added to provide feedback on mobile */
+nav a:active, .contact-info a:active {
+    background-color: var(--primary-fontcolor);
+    color: var(--primary-bgcolor);
+    border-radius: 5px;
+}
+
 .contact-info {
     justify-content: flex-start;
 }
