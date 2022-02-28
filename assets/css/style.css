@@ -155,14 +155,20 @@ footer p {
 
 /* Overlaying title over image */
 
-.first-title {
+.first-title, .add-title {
     position:absolute;
-    right: 0;
     bottom: 20px;
+    color: var(--default-fontcolor);
+    text-decoration: none;
+    background-color: var(--primary-title-bgcolor);
+}
+
+.first-title {
+    right: 0;
     width: 40%;
     padding: 15px;
     margin: 0 10px;
-    background-color: var(--primary-title-bgcolor);
+
 }
 
 .add-app img {
@@ -171,13 +177,10 @@ footer p {
 }
 
 .add-title {
-    position:absolute;
     left: 0;
-    bottom: 20px;
     width: 70%;
     padding: 10px 15px;
     margin-left: 10px;
-    background-color: var(--primary-title-bgcolor);
 }
 
 .footnote {
@@ -185,9 +188,9 @@ footer p {
     padding: 10px;
 }
 
-/* Styling for screens 520px to 649px  */
+/* Styling for screens 550px to 649px  */
 
-@media screen and (min-width: 520px) {
+@media screen and (min-width: 550px) {
     .hero {
         justify-content: center;
         height: 100px;
@@ -229,6 +232,11 @@ footer p {
     .add-app img {
         width: 300px;
      }
+
+     nav a, .contact-info a {
+        font-size: 1.1em;
+        padding: 10px 20px;
+    }
      
 }
 
