@@ -85,7 +85,7 @@ nav a:hover, .contact-info a:hover {
     border-radius: 5px;
 }
 
-/* added to provide feedback on mobile */
+/* added active state to provide feedback on mobile devices */
 nav a:active, .contact-info a:active {
     background-color: var(--primary-fontcolor);
     color: var(--primary-bgcolor);
@@ -222,7 +222,9 @@ table {
 }
 
 /* Styling for screens 650px to 799px */
+
 @media screen and (min-width: 650px) {
+
     .hero {
         height: 150px;
         justify-content: center;
@@ -250,6 +252,7 @@ table {
 }
 
 /* Styling for screens 800px to 949px */
+
 @media screen and (min-width: 800px) {
     h1 {
         font-size: 3rem;
@@ -307,7 +310,7 @@ table {
         padding: 10px 10px 10px 30px;
     }
 
-     .first-app img {
+    .first-app img {
         width: 600px;
     }
     
@@ -323,7 +326,9 @@ table {
 }
 
 /* Styling for screens over 950px */
+
 @media screen and (min-width: 950px) {
+
     body {
         width: 1000px;
         margin: 0 auto;
@@ -362,7 +367,7 @@ table {
         width: 400px;
      }
 
-     nav a, .contact-info a {
+    nav a, .contact-info a {
          font-size: 1.5em;
          padding: 10px 25px;
      }
