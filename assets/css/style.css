@@ -35,7 +35,7 @@ h1 {
 
 h2 {
     font-size: 2rem;
-    padding: 5px 10px;
+    padding: 10px;
 }
 
 h3 {
@@ -47,11 +47,6 @@ h3 {
 p {
     margin: 10px 10px 0 10px;
     font-family: 'Times New Roman', Times, serif;
-}
-
-/* li only applies to list of qualifications on resume */
-li {
-    margin-left: 40px;
 }
 
 /* Header/Nav/Footer Styling */
@@ -188,6 +183,23 @@ footer p {
     padding: 10px;
 }
 
+/* Resume styles */
+
+/* li only applies to list of qualifications on resume */
+li {
+    margin: 0 20px 0 30px;
+}
+
+table {
+    margin-left: 10px;
+    table-layout: fixed;
+    width: 350px;
+}
+
+.education p, .experience p, .certifications p {
+    margin: 0 20px 20px 10px;
+}
+
 /* Styling for screens 550px to 649px  */
 
 @media screen and (min-width: 550px) {
@@ -219,12 +231,6 @@ footer p {
         justify-content: center;
     }
 
-    .bio {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
     .first-app img {
         width: 600px;
     }
@@ -236,6 +242,12 @@ footer p {
      nav a, .contact-info a {
         font-size: 1.1em;
         padding: 10px 20px;
+    }
+
+    table {
+        margin-left: 20px;
+        table-layout: fixed;
+        width: 550px;
     }
      
 }
@@ -259,13 +271,7 @@ footer p {
         justify-content: center;
     }
 
-    .bio {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .first-app img {
+     .first-app img {
         width: 780px;
     }
     
@@ -299,17 +305,6 @@ footer p {
         font-size: 2.5rem;
     }
 
-    .hero {
-        height: 200px;
-        justify-content: center;
-    }
-
-    .bio {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
     .first-app img {
         width: 900px;
     }
@@ -322,5 +317,7 @@ footer p {
          font-size: 1.5em;
          padding: 10px 25px;
      }
+
+   
      
 }
