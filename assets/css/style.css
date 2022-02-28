@@ -80,8 +80,14 @@ nav, .contact-info {
 }
 
 nav a, .contact-info a {
-    padding: 5px 10px;
+    padding: 10px 15px;
     color: var(--primary-fontcolor);
+}
+
+nav a:hover, .contact-info a:hover {
+    background-color: var(--primary-fontcolor);
+    color: var(--primary-bgcolor);
+    border-radius: 5px;
 }
 
 .contact-info {
@@ -172,9 +178,9 @@ footer p {
     padding: 10px;
 }
 
-/* Styling for screens 475px to 649px  */
+/* Styling for screens 520px to 649px  */
 
-@media screen and (min-width: 475px) {
+@media screen and (min-width: 520px) {
     .hero {
         justify-content: center;
         height: 100px;
@@ -254,7 +260,7 @@ footer p {
 
      nav a, .contact-info a {
         font-size: 1.3em;
-        padding: 5px 15px;
+        padding: 10px 20px;
     }
      
 }
@@ -299,7 +305,7 @@ footer p {
 
      nav a, .contact-info a {
          font-size: 1.5em;
-         padding: 5px 20px;
+         padding: 10px 25px;
      }
      
 }
