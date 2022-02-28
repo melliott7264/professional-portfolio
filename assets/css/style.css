@@ -1,4 +1,7 @@
+/* Stylesheet for Mark Elliott's professional portfolio and resume */
+
 /* Define global colors */
+
 :root {
     --default-fontcolor: black;
     --default-bgcolor: white;
@@ -18,7 +21,7 @@
 
 /* Global styles */
 
-/* Inital styling for iPhone 12 Pro at 390px screen width */
+/* Initial styling for iPhone 12 Pro at 390px screen width */
 
 /* Set page to scroll to bookmarks instead of jump */
 html {
@@ -46,6 +49,7 @@ p {
     font-family: 'Times New Roman', Times, serif;
 }
 
+/* li only applies to list of qualifications on resume */
 li {
     margin-left: 40px;
 }
@@ -101,6 +105,7 @@ footer p {
 }
 
 /* Style About Section */
+
 .bio img {
     width: 300px;
     padding: 0 10px;
@@ -111,9 +116,11 @@ footer p {
 }
 
 /* Style Work Section */
+
 #work {
     background-color: var(--work-bgcolor);
 }
+
 .apps {
     display: flex;
     justify-content: center;
@@ -134,6 +141,7 @@ footer p {
    }
 
 /* Overlaying title over image */
+
 .first-title {
     position:absolute;
     right: 0;
