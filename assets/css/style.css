@@ -116,6 +116,7 @@ footer p {
 
 .bio img {
     width: 300px;
+    height: 300px;
     padding: 0 10px;
 }
 
@@ -133,6 +134,7 @@ footer p {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    align-content: center;
 }
 
 .first-app, .add-app {
@@ -160,7 +162,7 @@ footer p {
 
 .first-title {
     right: 0;
-    width: 40%;
+    width: 50%;
     padding: 15px;
     margin: 0 10px;
 
@@ -173,14 +175,9 @@ footer p {
 
 .add-title {
     left: 0;
-    width: 70%;
+    width: 80%;
     padding: 10px 15px;
     margin-left: 10px;
-}
-
-.footnote {
-    text-align: center;
-    padding: 10px;
 }
 
 /* Resume styles */
@@ -271,15 +268,54 @@ table {
         justify-content: center;
     }
 
+    #about {
+        display: flex;
+        justify-content: start;
+        margin: 20px 0;
+    }
+
+    #about h3,  #work h3{
+        display: inline-block;
+        text-align: right;
+        border-right: 2px solid black;
+        width: 120px;
+    }
+    
+    #about h3 {
+        height: 300px;
+    }
+
+    .bio {
+        justify-content: start;
+    }
+
+    .bio p {
+        display: inline-block;
+        width: 350px;
+        margin: 0 10px;
+        
+    }
+
+    #work {
+        display: flex;
+        justify-content: start;
+        margin: 20px 0;
+    }
+
+    #work h3 {
+        height: 720px;
+        padding: 10px 10px 10px 30px;
+    }
+
      .first-app img {
-        width: 780px;
+        width: 600px;
     }
     
     .add-app img {
-        width: 390px;
+        width: 300px;
      }
 
-     nav a, .contact-info a {
+    nav a, .contact-info a {
         font-size: 1.3em;
         padding: 10px 20px;
     }
@@ -305,12 +341,25 @@ table {
         font-size: 2.5rem;
     }
 
+    #about h3, #work h3 {
+        width: 140px;
+     }
+    
+    .bio p {
+        display: inline-block;
+        width: 500px;
+        font-size: 1.2em;
+    }
+
+    #work h3 {
+        height: 938px; 
+    }
     .first-app img {
-        width: 900px;
+        width: 800px;
     }
     
     .add-app img {
-        width: 450px;
+        width: 400px;
      }
 
      nav a, .contact-info a {
