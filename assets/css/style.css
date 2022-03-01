@@ -28,6 +28,11 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Makes sure scroll to About, Work, or Contact do no overrun the mark */
+#about, #work, #contact {
+    scroll-margin-top: 75px;
+  }
+
 h1 {
     font-size: 2.5rem;
     padding: 0 10px;
@@ -56,6 +61,13 @@ p {
 h1 a {
     text-decoration: none;
     color: var(--primary-fontcolor);
+}
+
+header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
 }
 
 header, #contact, nav, .contact-info {
@@ -292,12 +304,8 @@ table {
     #about h3,  #work h3{
         display: inline-block;
         text-align: right;
-        border-right: 2px solid black;
+        border-right: 4px solid black;
         width: 120px;
-    }
-    
-    #about h3 {
-        /* height: 300px; */
     }
 
     .bio {
@@ -308,7 +316,6 @@ table {
         display: inline-block;
         width: 350px;
         margin: 0 10px;
-        
     }
 
     #work {
@@ -319,7 +326,6 @@ table {
     }
 
     #work h3 {
-        /* height: 740px; */
         padding: 10px 10px 10px 30px;
     }
 
@@ -361,7 +367,7 @@ table {
 
     #about h3, #work h3 {
         width: 140px;
-     }
+    }
     
     .bio p {
         display: inline-block;
@@ -369,21 +375,18 @@ table {
         font-size: 1.2em;
     }
 
-    #work h3 {
-       /* height: 958px; */
-    }
     .first-app img {
         width: 800px;
     }
     
     .add-app img {
         width: 400px;
-     }
+    }
 
     nav a, .contact-info a {
          font-size: 1.5em;
          padding: 10px 25px;
-     }
+    }
 
    
      
