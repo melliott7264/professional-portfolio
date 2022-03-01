@@ -285,6 +285,7 @@ table {
     #about {
         display: flex;
         justify-content: start;
+        align-items: stretch;
         margin: 20px 0;
     }
 
@@ -296,7 +297,7 @@ table {
     }
     
     #about h3 {
-        height: 300px;
+        /* height: 300px; */
     }
 
     .bio {
@@ -313,11 +314,12 @@ table {
     #work {
         display: flex;
         justify-content: start;
+        align-items: stretch;
         margin: 20px 0;
     }
 
     #work h3 {
-        height: 740px;
+        /* height: 740px; */
         padding: 10px 10px 10px 30px;
     }
 
@@ -368,7 +370,7 @@ table {
     }
 
     #work h3 {
-        height: 958px; 
+       /* height: 958px; */
     }
     .first-app img {
         width: 800px;
