@@ -1,4 +1,4 @@
-/* Stylesheet for Mark Elliott's professional portfolio and resume */
+/* Stylesheet for Mark Elliott's professional portfolio (index.html) and resume (resume.html) */
 
 /* Define global colors */
 
@@ -35,14 +35,16 @@ h1 {
 
 h2 {
     font-size: 2rem;
-    padding: 10px;
 }
 
 h3 {
     font-size: 1.5rem;
-    padding: 10px;
-
 }
+
+h2, h3 {
+    padding: 10px;
+}
+)
 
 p {
     margin: 10px 10px 0 10px;
@@ -56,10 +58,13 @@ h1 a {
     color: var(--primary-fontcolor);
 }
 
-header, #contact {
+header, #contact, nav, .contact-info {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+}
+
+header, #contact {
+    justify-content: space-between;
 }
 
 header, footer {
@@ -67,11 +72,16 @@ header, footer {
     color: var(--primary-fontcolor);
 }
 
-nav, .contact-info {
-    display: flex;
+nav {
     justify-content: flex-end;
-    flex-wrap: wrap;
+}
+
+nav, .contact-info { 
     align-items: center;
+}
+
+.contact-info {
+    justify-content: flex-start;
 }
 
 nav a, .contact-info a {
@@ -91,17 +101,13 @@ nav a:active, .contact-info a:active {
     color: var(--primary-bgcolor);
     border-radius: 5px;
 }
-
-.contact-info {
-    justify-content: flex-start;
-}
  
 footer p {
     text-align: center;
     margin: 5px 0;
 }
 
-/* Hero Styling */
+/* Hero Styling - Background image of Skyline Drive in Spring 2012 by Mark Elliott */
 
 .hero {
     display: flex;
@@ -114,12 +120,14 @@ footer p {
 
 /* Style About Section */
 
+/* Headshot styling */
 .bio img {
     width: 300px;
     height: 300px;
     padding: 0 10px;
 }
 
+/* Personal brand styling */
 .bio p {
     margin-top: 10px;
 }
@@ -130,15 +138,17 @@ footer p {
     background-color: var(--work-bgcolor);
 }
 
-.apps {
+.apps, .first-app, .add-app {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+}
+
+.apps {
+    justify-content: center;
     align-content: center;
 }
 
 .first-app, .add-app {
-    display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     /* Need to set parent position to relative in order to allow child (.first-title)  to be set to absolute for overlay */
@@ -147,11 +157,17 @@ footer p {
 
 .first-app img {
     width: 380px;
-    padding: 20px 10px 20px 10px;
    }
 
-/* Overlaying title over image */
+.add-app img {
+    width: 300px;
+}
 
+.first-app img, .add-app img {
+    padding: 20px 10px;
+}
+
+/* Overlaying title over image */
 .first-title, .add-title {
     position:absolute;
     bottom: 20px;
@@ -166,11 +182,6 @@ footer p {
     padding: 15px;
     margin: 0 10px;
 
-}
-
-.add-app img {
-    width: 300px;
-    padding: 20px 10px;
 }
 
 .add-title {

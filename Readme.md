@@ -4,8 +4,8 @@
 
 This is a professional portfolio for Mark Elliott to showcase his web development work:
 
-- The purpose of this project is to prepare a vehicle to present myself in the best possible light to potential employers and provide them with the information they need to select me for an intial interview.
-- This project is an opportunity to solidify my HTML/CSS skills, and serve as an example of my best responsive HTML/CSS work in and of itself.
+- The purpose of this project is to prepare a vehicle to present Mark Elliott in the best possible light to potential employers and provide them with the information they need to select him for an intial interview.
+- This project is an opportunity to solidify Mark Elliott's HTML/CSS skills, and serve as an example of his best responsive HTML/CSS work in and of itself.
 
 
 ## Credits
@@ -28,6 +28,11 @@ furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
+
+All the images in this portfolio are copyright to Mark Elliott except for the headshot.  The headshot 
+is copyright &copy; 2022 Skibo Adams and my not be copied without his permission.  None of the 
+photos may be reproduced without permission except as necessary to use the portfolio as run from the 
+following location:  https://melliott7264.github.io/professional-portfolio/.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
