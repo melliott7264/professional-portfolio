@@ -101,14 +101,8 @@ nav a, .contact-info a {
     color: var(--primary-fontcolor);
 }
 
-nav a:hover, .contact-info a:hover {
-    background-color: var(--primary-fontcolor);
-    color: var(--primary-bgcolor);
-    border-radius: 5px;
-}
-
 /* added active state to provide feedback on mobile devices */
-nav a:active, .contact-info a:active {
+nav a:hover, .contact-info a:hover, nav a:active, .contact-info a:active {
     background-color: var(--primary-fontcolor);
     color: var(--primary-bgcolor);
     border-radius: 5px;
@@ -167,12 +161,8 @@ footer p {
     position: relative;
 }
 
-.first-app a:hover, .add-app a:hover {
-    opacity: 0.7;
-}
-
 /* Added active state for feedback on mobile devices */
-.first-app a:active, .add-app a:active {
+.first-app a:hover, .add-app a:hover, .first-app a:active, .add-app a:active {
     opacity: 0.7;
 }
 
@@ -249,8 +239,7 @@ table {
 
     .add-app img {
         width: 350px;
-     }
-    
+     } 
 }
 
 /* Styling for screens 650px to 799px */
@@ -279,8 +268,7 @@ table {
         margin-left: 20px;
         table-layout: fixed;
         width: 550px;
-    }
-     
+    }   
 }
 
 /* Styling for screens 800px to 949px */
@@ -349,8 +337,7 @@ table {
     nav a, .contact-info a {
         font-size: 1.3em;
         padding: 10px 20px;
-    }
-     
+    }    
 }
 
 /* Styling for screens over 950px */
@@ -395,8 +382,5 @@ table {
     nav a, .contact-info a {
          font-size: 1.5em;
          padding: 10px 25px;
-    }
-
-   
-     
+    } 
 }
