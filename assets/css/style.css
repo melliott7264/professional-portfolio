@@ -167,6 +167,15 @@ footer p {
     position: relative;
 }
 
+.first-app a:hover, .add-app a:hover {
+    opacity: 0.7;
+}
+
+/* Added active state for feedback on mobile devices */
+.first-app a:active, .add-app a:active {
+    opacity: 0.7;
+}
+
 .first-app img {
     width: 380px;
    }
