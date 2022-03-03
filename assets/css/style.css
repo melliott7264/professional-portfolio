@@ -130,7 +130,6 @@ footer p {
 /* Headshot styling */
 .bio img {
     width: 300px;
-    height: 300px;
     padding: 0 10px;
 }
 
@@ -156,6 +155,15 @@ footer p {
 .first-app, .add-app {
     /* Need to set parent position to relative in order to allow child (.first-title/.add-title)  to be set to absolute for overlay */
     position: relative;
+    
+}
+
+.first-app {
+    /* flex: 0 0 90vw; */
+}
+
+.add-app {
+    /* flex: 0 0 80vw; */
 }
 
 /* Added active state for feedback on mobile devices */
@@ -164,11 +172,11 @@ footer p {
 }
 
 .first-app img {
-    width: 380px;
-   }
+    width: 90vw;
+}
 
 .add-app img {
-    width: 300px;
+    width: 80vw;
 }
 
 .first-app img, .add-app img {
@@ -178,25 +186,22 @@ footer p {
 /* Overlaying title over image using absolute positioning */
 .first-title, .add-title {
     position:absolute;
-    bottom: 20px;
+    bottom: 23px;
     color: var(--default-fontcolor);
     text-decoration: none;
     background-color: var(--primary-title-bgcolor);
+    padding: 10px 15px;
+    margin: 0 10px;
 }
 
 .first-title {
     right: 0;
     width: 50%;
-    padding: 15px;
-    margin: 0 10px;
-
 }
 
 .add-title {
     left: 0;
     width: 80%;
-    padding: 10px 15px;
-    margin-left: 10px;
 }
 
 /* Resume styles */
@@ -209,16 +214,17 @@ li {
 table {
     margin-left: 10px;
     table-layout: fixed;
-    width: 350px;
+    width: 90vw;
 }
 
 .education p, .experience p, .certifications p {
     margin: 0 20px 20px 10px;
 }
 
-/* Styling for screens 550px to 649px  */
+/* Styling for screens 550px to 799x  */
 
 @media screen and (min-width: 550px) {
+
     .hero {
         justify-content: center;
         height: 100px;
@@ -229,48 +235,17 @@ table {
         flex-wrap: wrap;
         justify-content: center;
     }
-
-    .first-app img {
-        width: 450px;
-    }
-
-    .add-app img {
-        width: 350px;
-     } 
 }
 
-/* Styling for screens 650px to 799px */
-
-@media screen and (min-width: 650px) {
-
-    .hero {
-        height: 150px;
-        justify-content: center;
-    }
-
-    .first-app img {
-        width: 600px;
-    }
-    
-    .add-app img {
-        width: 300px;
-     }
-
-     nav a, .contact-info a {
-        font-size: 1.1em;
-        padding: 10px 20px;
-    }
-
-    table {
-        margin-left: 20px;
-        table-layout: fixed;
-        width: 550px;
-    }   
-}
-
-/* Styling for screens 800px to 949px */
+/* Styling for screens over 800px */
 
 @media screen and (min-width: 800px) {
+
+    body {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
     h1 {
         font-size: 3rem;
     }
@@ -284,7 +259,7 @@ table {
     }
 
     .hero {
-        height: 200px;
+        height: 150px;
         justify-content: center;
     }
 
@@ -322,59 +297,25 @@ table {
     }
 
     .first-app img {
-        width: 600px;
+        width: 75vw;
+        max-width: 800px;
     }
     
     .add-app img {
-        width: 300px;
+        width: 37.5vw;
+        max-width: 400px;
      }
 
     nav a, .contact-info a {
         font-size: 1.3em;
         padding: 10px 20px;
     }    
+
+    table {
+        margin-left: 20px;
+        table-layout: fixed;
+        width: 75vw;
+        max-width: 750px;
+    }   
 }
 
-/* Styling for screens over 950px */
-
-@media screen and (min-width: 950px) {
-
-    body {
-        width: 1000px;
-        margin: 0 auto;
-    }
-
-    h1 {
-        font-size: 3.5rem;
-    }
-
-    h2 {
-        font-size: 3rem;
-    }
-
-    h3 {
-        font-size: 2.5rem;
-    }
-
-    #about h3, #work h3 {
-        width: 140px;
-    }
-    
-    .bio p {
-        width: 500px;
-        font-size: 1.2em;
-    }
-
-    .first-app img {
-        width: 800px;
-    }
-    
-    .add-app img {
-        width: 400px;
-    }
-
-    nav a, .contact-info a {
-         font-size: 1.5em;
-         padding: 10px 25px;
-    } 
-}
