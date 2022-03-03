@@ -144,19 +144,24 @@ footer p {
     background-color: var(--work-bgcolor);
 }
 
+/*
 .apps, .first-app, .add-app {
     display: flex;
     flex-wrap: wrap;
 }
-
+*/
+.apps {
+    display: flex;
+    flex-wrap: wrap;
+}
 .apps {
     justify-content: center;
     align-content: center;
 }
 
 .first-app, .add-app {
-    justify-content: space-between;
-    flex-wrap: wrap;
+   /* justify-content: space-between;
+    flex-wrap: wrap; */
     /* Need to set parent position to relative in order to allow child (.first-title)  to be set to absolute for overlay */
     position: relative;
 }
