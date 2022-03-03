@@ -70,6 +70,7 @@ header {
     z-index: 9999;
 }
 
+/* Using flex to move header and contact blocks into horizontal alignment */
 header, #contact, nav, .contact-info {
     display: flex;
     flex-wrap: wrap;
@@ -144,25 +145,16 @@ footer p {
     background-color: var(--work-bgcolor);
 }
 
-/*
-.apps, .first-app, .add-app {
-    display: flex;
-    flex-wrap: wrap;
-}
-*/
+/* Using flex to wrap apps hoizontally */
 .apps {
     display: flex;
     flex-wrap: wrap;
-}
-.apps {
     justify-content: center;
     align-content: center;
 }
 
 .first-app, .add-app {
-   /* justify-content: space-between;
-    flex-wrap: wrap; */
-    /* Need to set parent position to relative in order to allow child (.first-title)  to be set to absolute for overlay */
+    /* Need to set parent position to relative in order to allow child (.first-title/.add-title)  to be set to absolute for overlay */
     position: relative;
 }
 
@@ -183,7 +175,7 @@ footer p {
     padding: 20px 10px;
 }
 
-/* Overlaying title over image */
+/* Overlaying title over image using absolute positioning */
 .first-title, .add-title {
     position:absolute;
     bottom: 20px;
@@ -304,7 +296,6 @@ table {
     }
 
     #about h3,  #work h3{
-        display: inline-block;
         text-align: right;
         border-right: 4px solid black;
         width: 120px;
@@ -315,7 +306,6 @@ table {
     }
 
     .bio p {
-        display: inline-block;
         width: 350px;
         margin: 0 10px;
     }
@@ -371,7 +361,6 @@ table {
     }
     
     .bio p {
-        display: inline-block;
         width: 500px;
         font-size: 1.2em;
     }
