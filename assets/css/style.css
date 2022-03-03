@@ -130,6 +130,7 @@ footer p {
 /* Headshot styling */
 .bio img {
     width: 300px;
+    height: 300px;
     padding: 0 10px;
 }
 
@@ -156,14 +157,6 @@ footer p {
     /* Need to set parent position to relative in order to allow child (.first-title/.add-title)  to be set to absolute for overlay */
     position: relative;
     
-}
-
-.first-app {
-    /* flex: 0 0 90vw; */
-}
-
-.add-app {
-    /* flex: 0 0 80vw; */
 }
 
 /* Added active state for feedback on mobile devices */
@@ -281,7 +274,7 @@ table {
     }
 
     .bio p {
-        width: 350px;
+        flex: 1 0 350px;
         margin: 0 10px;
     }
 
