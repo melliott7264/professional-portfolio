@@ -16,6 +16,8 @@ Mark Elliott  https://github.com/melliott7264
 
 Link to project: https://melliott7264.github.io/professional-portfolio/
 
+Photo credit: Skibo Adams for the headshot.   See the license details below.
+
 
 ## License
 
