@@ -5,7 +5,9 @@
 This is a professional portfolio for Mark Elliott to showcase his web development work:
 
 - The purpose of this project is to prepare a vehicle to present Mark Elliott in the best possible light to potential employers and provide them with the information they need to select him for an intial interview.
-- This project is an opportunity to solidify Mark Elliott's HTML/CSS skills, and serve as an example of his best responsive HTML/CSS work in and of itself.
+- This project is also an opportunity to solidify Mark Elliott's HTML/CSS skills, and serve as an example of his best responsive HTML/CSS work.
+
+![Screen shot for Mark Elliot's professional portfolio](./assets/images/ScreenShot.png)
 
 
 ## Credits
