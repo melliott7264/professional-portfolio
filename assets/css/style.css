@@ -28,6 +28,10 @@ html {
     scroll-behavior: smooth;
 }
 
+.align-center {
+    text-align: center;
+}
+
 /* Makes sure scroll to About, Work, or Contact do no overrun the mark */
 #about, #work, #contact {
     scroll-margin-top: 75px;
