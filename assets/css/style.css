@@ -4,11 +4,11 @@
 
 :root {
     --default-fontcolor: black;
-    --default-bgcolor: white;
-    --primary-bgcolor: #6363d0;
+    --default-bgcolor: #ffffffde;
+    --primary-bgcolor: #4444f7;
     --primary-fontcolor: #ffffff;
-    --primary-title-bgcolor: #cee7fc;
-    --work-bgcolor: #fff8d5;
+    --primary-title-bgcolor: #f6db28;
+    --work-bgcolor: #d3d2cbb1;
 }
 
 /* Reset global defaults */
@@ -48,12 +48,11 @@ h2 {
 
 h3 {
     font-size: 1.5rem;
-    margin-top: 20px;
 }
 
 h4 {
     font-size: 1.25rem;
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 
 h5 {
@@ -67,6 +66,13 @@ h2, h3, h4, h5 {
 p {
     margin: 10px 10px 0 10px;
     font-family: 'Times New Roman', Times, serif;
+}
+
+.jumptarget::before {
+        content:"";
+        display:block;
+        height:100px; /* fixed header height*/
+        margin:-75px 0 0; /* negative fixed header height */
 }
 
 /* Header/Nav/Footer Styling */
@@ -158,6 +164,12 @@ footer p {
     background-color: var(--work-bgcolor);
 }
 
+
+.project-title {
+    text-align: center;
+    background-color: var(--primary-title-bgcolor);
+}
+
 /* Using flex to wrap apps hoizontally */
 .apps {
     display: flex;
@@ -166,48 +178,36 @@ footer p {
     align-content: center;
 }
 
-.first-app, .add-app {
-    /* Need to set parent position to relative in order to allow child (.first-title/.add-title)  to be set to absolute for overlay */
-    position: relative;
-    
-}
-
 /* Added active state for feedback on mobile devices */
 .first-app a:hover, .add-app a:hover, .first-app a:active, .add-app a:active {
     opacity: 0.7;
 }
 
-.first-app img {
+/* .first-app img, .add-app img {
+    margin: 0 auto;
     width: 90vw;
+} */
+
+.first-app img, .add-app img, .first-title, .add-title {
+    display: block;
+    margin: 0 auto;
+     width: 90vw;
 }
 
-.add-app img {
-    width: 80vw;
+.first-app img, .add-app img { 
+    padding: 20px 10px 0px 10px;  
 }
 
-.first-app img, .add-app img {
-    padding: 20px 10px;
-}
-
-/* Overlaying title over image using absolute positioning */
 .first-title, .add-title {
-    position:absolute;
-    bottom: 23px;
     color: var(--default-fontcolor);
     text-decoration: none;
     background-color: var(--primary-title-bgcolor);
-    padding: 10px 15px;
-    margin: 0 10px;
+    padding: 10px 15px; 
 }
 
-.first-title {
-    right: 0;
-    width: 50%;
-}
-
-.add-title {
-    left: 0;
-    width: 80%;
+.github {
+    display: block;
+    text-align: center;
 }
 
 /* Resume styles */
@@ -303,15 +303,14 @@ table {
         padding: 10px 10px 10px 30px;
     }
 
-    .first-app img {
+    .project-title {
+        padding: 20px;
+    }
+
+    .first-app img, .add-app img, .first-title, .add-title {
         width: 75vw;
         max-width: 800px;
     }
-    
-    .add-app img {
-        width: 37.5vw;
-        max-width: 400px;
-     }
 
     nav a, .contact-info a {
         font-size: 1.3em;
