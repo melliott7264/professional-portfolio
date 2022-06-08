@@ -9,15 +9,13 @@ This is a professional portfolio for Mark Elliott to showcase his web developmen
 
 ![Screen shot for Mark Elliot's professional portfolio](./assets/images/ProPortfolio.gif)
 
-
 ## Credits
 
-Mark Elliott  https://github.com/melliott7264
+Mark Elliott https://github.com/melliott7264
 
 Link to project: https://melliott7264.github.io/professional-portfolio/
 
-Photo credit: Skibo Adams for the headshot.   See the license details below.
-
+Photo credit: Skibo Adams for the headshot. See the license details below.
 
 ## License
 
@@ -33,10 +31,10 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-All the images in this portfolio are copyright to Mark Elliott except for the headshot.  The headshot 
-is copyright &copy; 2022 Skibo Adams and my not be copied without his permission.  None of the 
-photos may be reproduced without permission except as necessary to use the portfolio as run from the 
-following location:  https://melliott7264.github.io/professional-portfolio/.
+All the images in this portfolio are copyright to Mark Elliott except for the headshot. The headshot
+is copyright &copy; 2022 Skibo Adams and my not be copied without his permission. None of the
+photos may be reproduced without permission except as necessary to use the portfolio as run from the
+following location: https://melliott7264.github.io/professional-portfolio/.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -47,4 +45,3 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ---
-
