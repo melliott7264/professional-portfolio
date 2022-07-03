@@ -3,20 +3,20 @@
 /* Define global colors */
 
 :root {
-    --default-fontcolor: black;
-    --default-bgcolor: #ffffffde;
-    --primary-bgcolor: #4444f7;
-    --primary-fontcolor: #ffffff;
-    --primary-title-bgcolor: #f6db28;
-    --work-bgcolor: #d3d2cbb1;
+  --default-fontcolor: black;
+  --default-bgcolor: #ffffffde;
+  --primary-bgcolor: #4444f7;
+  --primary-fontcolor: #ffffff;
+  --primary-title-bgcolor: #f6db28;
+  --work-bgcolor: #d3d2cbb1;
 }
 
 /* Reset global defaults */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Global styles */
@@ -25,163 +25,186 @@
 
 /* Set page to scroll to bookmarks instead of jump */
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 .align-center {
-    text-align: center;
+  text-align: center;
 }
 
 /* Makes sure scroll to About, Work, or Contact do no overrun the mark */
-#about, #work, #contact {
-    scroll-margin-top: 75px;
-  }
+#about,
+#work,
+#contact {
+  scroll-margin-top: 75px;
+}
 
 h1 {
-    font-size: 2.5rem;
-    padding: 0 10px;
+  font-size: 2.5rem;
+  padding: 0 10px;
 }
 
 h2 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 h3 {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 h4 {
-    font-size: 1.25rem;
-    /* margin-top: 20px; */
+  font-size: 1.25rem;
+  /* margin-top: 20px; */
 }
 
 h5 {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
-h2, h3, h4, h5 {
-    padding: 10px;
+h2,
+h3,
+h4,
+h5 {
+  padding: 10px;
 }
 
 p {
-    margin: 10px 10px 0 10px;
-    font-family: 'Times New Roman', Times, serif;
+  margin: 10px 10px 0 10px;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 /* used to add space before an anchor point */
 .jumptarget::before {
-        content:"";
-        display:block;
-        height:100px; /* fixed header height*/
-        margin:-75px 0 0; /* negative fixed header height */
+  content: '';
+  display: block;
+  height: 100px; /* fixed header height*/
+  margin: -75px 0 0; /* negative fixed header height */
 }
 
 /* Header/Nav/Footer Styling */
 
 h1 a {
-    text-decoration: none;
-    color: var(--primary-fontcolor);
+  text-decoration: none;
+  color: var(--primary-fontcolor);
 }
 
 header {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    z-index: 9999;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
 }
 
 /* Using flex to move header and contact blocks into horizontal alignment */
-header, #contact, nav, .contact-info {
-    display: flex;
-    flex-wrap: wrap;
+header,
+#contact,
+nav,
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-header, #contact {
-    justify-content: space-between;
+header,
+#contact {
+  justify-content: space-between;
 }
 
-header, footer {
-    background-color: var(--primary-bgcolor);
-    color: var(--primary-fontcolor);
+header,
+footer {
+  background-color: var(--primary-bgcolor);
+  color: var(--primary-fontcolor);
 }
 
 nav {
-    justify-content: flex-end;
+  justify-content: flex-end;
 }
 
-nav, .contact-info { 
-    align-items: center;
+nav,
+.contact-info {
+  align-items: center;
 }
 
 .contact-info {
-    justify-content: flex-start;
+  justify-content: flex-start;
 }
 
-nav a, .contact-info a {
-    padding: 10px 15px;
-    color: var(--primary-fontcolor);
+nav a,
+.contact-info a {
+  padding: 10px 15px;
+  color: var(--primary-fontcolor);
 }
 
 /* added active state to provide feedback on mobile devices */
-nav a:hover, .contact-info a:hover, nav a:active, .contact-info a:active {
-    background-color: var(--primary-fontcolor);
-    color: var(--primary-bgcolor);
-    border-radius: 5px;
+nav a:hover,
+.contact-info a:hover,
+nav a:active,
+.contact-info a:active {
+  background-color: var(--primary-fontcolor);
+  color: var(--primary-bgcolor);
+  border-radius: 5px;
 }
- 
+
 footer p {
-    text-align: center;
-    margin: 5px 0;
+  text-align: center;
+  margin: 5px 0;
 }
 
 /* Hero Styling - Background image of Skyline Drive in Spring 2012 by Mark Elliott */
 
 .hero {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    height: 60px;
-    background-image: url(../images/PortfolioHeroBG-1.jpg);
-    background-position: left top;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  /* background-image: url(../images/PortfolioHeroBG-1.jpg); */
+  background-image: url(../images/Header_Background-1.jpg);
+  background-position: center;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  color: var(--primary-fontcolor);
 }
 
 /* Style About Section */
 
 /* Headshot styling */
 .bio img {
-    width: 300px;
-    height: 300px;
-    padding: 0 10px;
+  width: 300px;
+  height: 300px;
+  padding: 0 10px;
 }
 
 /* Personal brand styling */
 .bio p {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 /* Style Work Section */
 
 #work {
-    background-color: var(--work-bgcolor);
+  background-color: var(--work-bgcolor);
 }
 
-
 .project-title {
-    text-align: center;
-    background-color: var(--primary-title-bgcolor);
+  text-align: center;
+  background-color: var(--primary-title-bgcolor);
 }
 
 /* Using flex to wrap apps hoizontally */
 .apps {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
 }
 
 /* Added active state for feedback on mobile devices */
-.first-app a:hover, .add-app a:hover, .first-app a:active, .add-app a:active {
-    opacity: 0.7;
+.first-app a:hover,
+.add-app a:hover,
+.first-app a:active,
+.add-app a:active {
+  opacity: 0.7;
 }
 
 /* .first-app img, .add-app img {
@@ -189,140 +212,149 @@ footer p {
     width: 90vw;
 } */
 
-.first-app img, .add-app img, .first-title, .add-title {
-    display: block;
-    margin: 0 auto;
-     width: 90vw;
+.first-app img,
+.add-app img,
+.first-title,
+.add-title {
+  display: block;
+  margin: 0 auto;
+  width: 90vw;
 }
 
-.first-app img, .add-app img { 
-    padding: 20px 10px 0px 10px;  
+.first-app img,
+.add-app img {
+  padding: 20px 10px 0px 10px;
 }
 
-.first-title, .add-title {
-    color: var(--default-fontcolor);
-    text-decoration: none;
-    background-color: var(--primary-title-bgcolor);
-    padding: 10px 15px; 
+.first-title,
+.add-title {
+  color: var(--default-fontcolor);
+  text-decoration: none;
+  background-color: var(--primary-title-bgcolor);
+  padding: 10px 15px;
 }
 
 .github {
-    display: block;
-    text-align: center;
+  display: block;
+  text-align: center;
 }
 
 /* Resume styles */
 
 /* li only applies to list of qualifications on resume */
 li {
-    margin: 0 20px 0 30px;
+  margin: 0 20px 0 30px;
 }
 
 table {
-    margin-left: 10px;
-    table-layout: fixed;
-    width: 90vw;
+  margin-left: 10px;
+  table-layout: fixed;
+  width: 90vw;
 }
 
-.education p, .experience p, .certifications p {
-    margin: 0 20px 20px 10px;
+.education p,
+.experience p,
+.certifications p {
+  margin: 0 20px 20px 10px;
 }
 
 /* Styling for screens 550px to 799x  */
 
 @media screen and (min-width: 550px) {
+  .hero {
+    justify-content: center;
+    height: 100px;
+  }
 
-    .hero {
-        justify-content: center;
-        height: 100px;
-    }
-
-    .bio {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+  .bio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 /* Styling for screens over 800px */
 
 @media screen and (min-width: 800px) {
+  body {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
 
-    body {
-        max-width: 1000px;
-        margin: 0 auto;
-    }
+  h1 {
+    font-size: 3rem;
+  }
 
-    h1 {
-        font-size: 3rem;
-    }
+  h2 {
+    font-size: 2.5rem;
+  }
 
-    h2 {
-        font-size: 2.5rem;
-    }
+  h3 {
+    font-size: 2rem;
+  }
 
-    h3 {
-        font-size: 2rem;
-    }
+  .hero {
+    height: 150px;
+    justify-content: center;
+  }
 
-    .hero {
-        height: 150px;
-        justify-content: center;
-    }
+  #about {
+    display: flex;
+    justify-content: start;
+    align-items: stretch;
+    margin: 20px 0;
+  }
 
-    #about {
-        display: flex;
-        justify-content: start;
-        align-items: stretch;
-        margin: 20px 0;
-    }
+  #about h3,
+  #work h3 {
+    text-align: right;
+    border-right: 4px solid black;
+    width: 120px;
+  }
 
-    #about h3,  #work h3{
-        text-align: right;
-        border-right: 4px solid black;
-        width: 120px;
-    }
+  .bio {
+    justify-content: start;
+  }
 
-    .bio {
-        justify-content: start;
-    }
+  .bio p {
+    flex: 1 0 350px;
+    margin: 0 10px;
+    font-size: 18px;
+  }
 
-    .bio p {
-        flex: 1 0 350px;
-        margin: 0 10px;
-        font-size: 18px;
-    }
+  #work {
+    display: flex;
+    justify-content: start;
+    align-items: stretch;
+    margin: 20px 0;
+  }
 
-    #work {
-        display: flex;
-        justify-content: start;
-        align-items: stretch;
-        margin: 20px 0;
-    }
+  #work h3 {
+    padding: 10px 10px 10px 30px;
+  }
 
-    #work h3 {
-        padding: 10px 10px 10px 30px;
-    }
+  .project-title {
+    padding: 20px;
+  }
 
-    .project-title {
-        padding: 20px;
-    }
+  .first-app img,
+  .add-app img,
+  .first-title,
+  .add-title {
+    width: 75vw;
+    max-width: 800px;
+  }
 
-    .first-app img, .add-app img, .first-title, .add-title {
-        width: 75vw;
-        max-width: 800px;
-    }
+  nav a,
+  .contact-info a {
+    font-size: 1.3em;
+    padding: 10px 20px;
+  }
 
-    nav a, .contact-info a {
-        font-size: 1.3em;
-        padding: 10px 20px;
-    }    
-
-    table {
-        margin-left: 20px;
-        table-layout: fixed;
-        width: 75vw;
-        max-width: 750px;
-    }   
+  table {
+    margin-left: 20px;
+    table-layout: fixed;
+    width: 75vw;
+    max-width: 750px;
+  }
 }
-
